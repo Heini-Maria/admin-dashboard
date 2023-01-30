@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  /* border: 1px solid red; */
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+body {
+  display: grid;
+  grid-template: 20% 80% / 18% 82%;
+  grid-template-areas:
+  "dashboard header"
+  "dashboard main";
+}
+
+#dashboard {
+  grid-area: dashboard;
+  border: 1px solid red;
+}
+
+header {
+  grid-area: header;
+  border: 1px solid green;
+}
+
+main {
+  grid-area: main;
+  border: 1px solid blue;
+  display: grid;
+  grid-template-columns: 72% 28%;
+}
+
+#your-projects {
+  border: 1px solid red;
+}
+
+#info {
+  border: 1px solid blue;
+}
