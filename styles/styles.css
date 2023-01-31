@@ -36,6 +36,7 @@ main {
   border: 1px solid blue;
   display: grid;
   grid-template-columns: 72% 28%;
+  background-color: #e2e8f0;
 }
 
 #your-projects {
@@ -44,6 +45,9 @@ main {
 
 #info {
   border: 1px solid blue;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  overflow: hidden;
 }
 
 img.user-svg {
@@ -53,4 +57,41 @@ img.user-svg {
 img.profile-svg {
   height: 45px;
   width: 45px;
+}
+
+.wrapper {
+  padding: 5% 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper>h3 {
+  margin-bottom: 10%;
+}
+
+.card {
+  height: 100%;
+  background-color: whitesmoke;
+  padding: 5% 10%;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px gray;
+  display: grid;
+  align-content: space-evenly;
+  justify-content: space-evenly;
+
+}
+
+.card>div>h4 {
+  font-size: 16px;
+}
+
+.card>div>h4~p {
+  font-size: 12px;
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+          line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
