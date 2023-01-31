@@ -45,3 +45,12 @@ main {
 #info {
   border: 1px solid blue;
 }
+
+img.user-svg {
+  height: 30px;
+  width: 30px;
+}
+img.profile-svg {
+  height: 45px;
+  width: 45px;
+}
