@@ -16,9 +16,8 @@ body {
   width: 100%;
   display: grid;
   grid-template: 20% 80% / 18% 82%;
-  grid-template-areas:
-    "dashboard header"
-    "dashboard main";
+  grid-template-areas: "dashboard header"
+                       "dashboard main";
 }
 
 #dashboard {
