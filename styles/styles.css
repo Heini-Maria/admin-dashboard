@@ -7,21 +7,21 @@
 }
 
 html {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 }
 
 body {
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
   display: grid;
   grid-template: 20% 80% / 18% 82%;
-  grid-template-areas:
-  "dashboard header"
-  "dashboard main";
+  grid-template-areas: "dashboard header"
+                       "dashboard main";
 }
 
 #dashboard {
+  min-height: 100%;
   grid-area: dashboard;
   border: 1px solid red;
 }
@@ -32,10 +32,12 @@ header {
 }
 
 main {
+  min-height: 100%;
   grid-area: main;
   border: 1px solid blue;
   display: grid;
   grid-template-columns: 72% 28%;
+  background-color: #e2e8f0;
 }
 
 #your-projects {
@@ -43,14 +45,83 @@ main {
 }
 
 #info {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
 }
 
 img.user-svg {
   height: 30px;
   width: 30px;
 }
+
 img.profile-svg {
   height: 45px;
   width: 45px;
+}
+
+.wrapper {
+  height: 90%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.trending>div {
+  display: flex;
+  align-items: center;
+}
+
+.trending>div>div {
+  padding-left: 15px;
+}
+
+.card {
+  height: 100%;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  box-shadow: 10px 5px 5px gray;
+  display: grid;
+  justify-items: center;
+  align-content: space-evenly;
+  overflow: hidden;
+}
+
+.card>div{
+  width: 80%;
+}
+
+.card>div>img {
+  grid-area: avatar;
+  width: 50px;
+}
+
+.card>div>h4 {
+  font-size: 16px;
+}
+
+.card>div>h4~p {
+  color: grey;
+  font-size: 12px;
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+          line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.card>div>div>p {
+  color: grey;
+  font-size: 12px;
+}
+
+.card>div>div>p:first-child {
+  color: black;
+  font-size: 16px;
+  font-weight: 900;
 }
