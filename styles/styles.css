@@ -1,8 +1,29 @@
+@font-face {
+  font-family: 'Roboto-normal';
+  src: url(../styles/fonts/Roboto-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-ligth';
+  src: url(../styles/fonts/Roboto-Light.ttf);
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-bold';
+  src: url(../styles/fonts/Roboto-Bold.ttf);
+  font-weight: normal;
+  font-style: bold;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Roboto-normal', sans-serif;
   /* border: 1px solid red; */
 }
 
@@ -10,7 +31,12 @@ html {
   min-height: 100vh;
   width: 100%;
 }
-
+p {
+  font-size: 12px;
+}
+h1 {
+  font-size: 18px;
+}
 body {
   min-height: 100vh;
   width: 100%;
@@ -29,6 +55,11 @@ body {
 header {
   grid-area: header;
   border: 1px solid green;
+  display: grid;
+  padding-left: 30px;
+  grid-template: 35% 65% / 5% 55% 10% 30%;
+  grid-template-areas: "search search search profile-icons"
+                        "profile-svg profile profile actions";
 }
 
 main {
@@ -53,13 +84,75 @@ main {
 }
 
 img.user-svg {
-  height: 30px;
-  width: 30px;
+  height: 28px;
+  width: 28px;
 }
 
 img.profile-svg {
-  height: 45px;
-  width: 45px;
+  height: 48px;
+  width: 48px;
+  grid-area: profile-svg;
+  align-self: center;
+}
+
+.search {
+  grid-area: search;
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+}
+.search input {
+  width: 100%;
+  background-color: #e2e8f0;
+  border: none;
+  height: 60%;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.profile-icons {
+  grid-area: profile-icons;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  align-self: center;
+}
+.profile-icons>* {
+  margin-left: 10px;
+}
+.profile-icons>p {
+  display: inline;
+  margin-left: 30px;
+  margin-right: 40px;
+  font-family: 'Roboto-bold', sans-serif;
+}
+
+.profile {
+  grid-area: profile;
+  align-self: center;
+}
+.profile> p {
+  font-family: 'Roboto-bold', sans-serif;
+}
+header .material-icons {
+  font-size: 20px;
+}
+
+
+.actions {
+  display: flex;
+  grid-area: actions;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+.actions button {
+  background-color: #1992D4;
+  border: none;
+  color: #fff;
+  border-radius: 15px;
+  padding: 5px;
+  width: 25%;
 }
 
 .wrapper {
