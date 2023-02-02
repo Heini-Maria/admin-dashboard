@@ -50,7 +50,7 @@ body {
   min-height: 100%;
   grid-area: dashboard;
   border: 1px solid red;
-  background-color: #0284c7;
+  background-color: #1992D4;
   color: #fff;
   display: flex;
   flex-direction: column;
