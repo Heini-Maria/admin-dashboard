@@ -50,14 +50,61 @@ body {
   min-height: 100%;
   grid-area: dashboard;
   border: 1px solid red;
+  background-color: #0284c7;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
 }
 
-.dashboard-top {}
-.dashboard-center {}
-.dashboard-bottom {}
-.dashboard-list {}
-.dashboard-list-item {}
-.dashboard-list-icon {}
+.dashboard-link {
+  text-decoration: none;
+  color: #f4f4f5
+}
+
+.dashboard-top,
+.dashboard-center,
+.dashboard-bottom {
+  padding: 20px 0;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.dashboard-top {
+  flex-direction: row;
+}
+
+.dashboard-logo {
+  font-size: 34px;
+  margin-right: 10px;
+  padding-left: 10px;
+}
+.dashboard-brand {
+  font-weight: bold;
+  font-size: 34px;
+}
+.dashboard-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+.dashboard-list-item {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+}
+.dashboard-list-icon {
+  width: 30px;
+  font-size: 24px;
+}
+
+.dashboard-list-item:hover,
+.dashboard-list-item:active {
+  background-color: #0ea5e9;
+  color: #fafafa;
+}
 
 header {
   grid-area: header;
