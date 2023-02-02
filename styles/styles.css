@@ -50,7 +50,7 @@ body {
   min-height: 100%;
   grid-area: dashboard;
   border: 1px solid red;
-  background-color: #0284c7;
+  background-color: #1992D4;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -69,14 +69,10 @@ body {
   display: flex;
   flex-direction: column;
 }
-.dashboard-top {
-  flex-direction: row;
-}
 
 .dashboard-logo {
   font-size: 34px;
   margin-right: 10px;
-  padding-left: 10px;
 }
 .dashboard-brand {
   font-weight: bold;
