@@ -125,6 +125,63 @@ main {
   border: 1px solid red;
 }
 
+.header-p{
+  margin-left: 20px;
+  font-size: 20px;
+
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.card-1 {
+  width: calc(50% - 10px);
+  height: 20%;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid orange;
+  box-shadow: 2px 2px 5px silver;
+  text-align: left;
+  background-color: whitesmoke;
+}
+
+.card-text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card-title{
+  font-size: 27px;
+}
+
+.card-content{
+  width: 85%;
+  font-size: 11px;
+  color: gray;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: right;
+  margin-top: 30px;
+}
+
+.icon-container i {
+  margin-right: 20px;
+  font-size: 12px;
+}
+
+
 #info {
   /* border: 1px solid blue; */
   display: grid;
