@@ -4,7 +4,7 @@ Admin dashboard site -team project using CSS grid.
 
 ## Preview
 
-See the final product:
+See the final product: https://heini-maria.github.io/admin-dashboard/
 
 
 ADD IMAGE HERE
