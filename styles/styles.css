@@ -31,12 +31,7 @@ html {
   min-height: 100vh;
   width: 100%;
 }
-p {
-  font-size: 12px;
-}
-h1 {
-  font-size: 18px;
-}
+
 body {
   min-height: 100vh;
   width: 100%;
@@ -44,6 +39,14 @@ body {
   grid-template: 20% 80% / 18% 82%;
   grid-template-areas: "dashboard header"
                        "dashboard main";
+}
+
+p {
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 18px;
 }
 
 #dashboard {
@@ -74,15 +77,18 @@ body {
   font-size: 34px;
   margin-right: 10px;
 }
+
 .dashboard-brand {
   font-weight: bold;
   font-size: 34px;
 }
+
 .dashboard-list {
   list-style: none;
   padding: 0;
   width: 100%;
 }
+
 .dashboard-list-item {
   margin-left: 10px;
   margin-bottom: 10px;
@@ -91,6 +97,7 @@ body {
   padding: 10px;
   border-radius: 10px;
 }
+
 .dashboard-list-icon {
   width: 30px;
   font-size: 24px;
@@ -128,13 +135,12 @@ main {
 .header-p{
   margin-left: 20px;
   font-size: 20px;
-
 }
+
 .card-container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  
 }
 
 .row {
@@ -183,7 +189,6 @@ main {
 
 
 #info {
-  /* border: 1px solid blue; */
   display: grid;
   grid-template-rows: 1fr 1fr;
   align-items: center;
@@ -224,9 +229,11 @@ img.profile-svg {
   justify-content: end;
   align-self: center;
 }
+
 .profile-icons>* {
   margin-left: 10px;
 }
+
 .profile-icons>p {
   display: inline;
   margin-left: 30px;
@@ -238,13 +245,14 @@ img.profile-svg {
   grid-area: profile;
   align-self: center;
 }
+
 .profile> p {
   font-family: 'Roboto-bold', sans-serif;
 }
+
 header .material-icons {
   font-size: 20px;
 }
-
 
 .actions {
   display: flex;
@@ -253,6 +261,7 @@ header .material-icons {
   justify-content: space-evenly;
   padding: 30px;
 }
+
 .actions button {
   background-color: #1992D4;
   border: none;
@@ -270,12 +279,12 @@ header .material-icons {
   gap: 20px;
 }
 
-.trending>div {
+.trending>a {
   display: flex;
   align-items: center;
 }
 
-.trending>div>div {
+.trending>a>div {
   padding-left: 15px;
 }
 
@@ -283,7 +292,7 @@ header .material-icons {
   height: 100%;
   background-color: whitesmoke;
   border-radius: 15px;
-  box-shadow: 10px 5px 5px gray;
+  box-shadow: 2px 2px 5px silver;
   display: grid;
   justify-items: center;
   align-content: space-evenly;
@@ -294,7 +303,12 @@ header .material-icons {
   width: 80%;
 }
 
-.card>div>img {
+.card>a{
+  width: 80%;
+  text-decoration: none;
+}
+
+.card>a>img {
   grid-area: avatar;
   width: 50px;
 }
@@ -315,12 +329,12 @@ header .material-icons {
   -webkit-box-orient: vertical;
 }
 
-.card>div>div>p {
+.card>a>div>p {
   color: grey;
   font-size: 12px;
 }
 
-.card>div>div>p:first-child {
+.card>a>div>p:first-child {
   color: black;
   font-size: 16px;
   font-weight: 900;
