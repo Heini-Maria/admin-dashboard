@@ -187,14 +187,6 @@ main {
   font-size: 12px;
 }
 
-
-#info {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  align-items: center;
-  justify-items: center;
-}
-
 img.user-svg {
   height: 28px;
   width: 28px;
@@ -213,6 +205,7 @@ img.profile-svg {
   align-items: center;
   padding-top: 5px;
 }
+
 .search input {
   width: 100%;
   background-color: #e2e8f0;
@@ -269,6 +262,13 @@ header .material-icons {
   border-radius: 15px;
   padding: 5px;
   width: 25%;
+}
+
+#info {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
 }
 
 .wrapper {
