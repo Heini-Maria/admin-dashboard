@@ -24,7 +24,6 @@
   margin: 0;
   padding: 0;
   font-family: 'Roboto-normal', sans-serif;
-  /* border: 1px solid red; */
 }
 
 html {
@@ -36,23 +35,27 @@ body {
   min-height: 100vh;
   width: 100%;
   display: grid;
+  background-color: #e2e8f0;
   grid-template: 18% 82% / 18% 82%;
   grid-template-areas: "dashboard header"
                        "dashboard main";
 }
 
 p {
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 h1 {
-  font-size: 22px;
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 #dashboard {
   min-height: 100%;
   grid-area: dashboard;
-  border: 1px solid red;
   background-color: #1992D4;
   color: #fff;
   display: flex;
@@ -80,7 +83,7 @@ h1 {
 
 .dashboard-brand {
   font-weight: bold;
-  font-size: 34px;
+  font-size: 2rem;
 }
 
 .dashboard-list {
@@ -92,7 +95,7 @@ h1 {
 .dashboard-list-item {
   margin-left: 10px;
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   padding: 10px;
   border-radius: 10px;
@@ -100,7 +103,7 @@ h1 {
 
 .dashboard-list-icon {
   width: 30px;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .dashboard-list-item:hover,
@@ -111,10 +114,11 @@ h1 {
 
 header {
   grid-area: header;
-  border: 1px solid green;
   display: grid;
-  padding-left: 30px;
-  grid-template: 35% 65% / 5% 55% 10% 30%;
+  background-color: whitesmoke;
+  box-shadow: 7px 8px 30px 2px rgba(0,0,0,0.3);
+  padding: 10px 50px;
+  grid-template: 35% 65% / 10% 50% 10% 30%;
   grid-template-areas: "search search search profile-icons"
                         "profile-svg profile profile actions";
 }
@@ -122,14 +126,11 @@ header {
 main {
   min-height: 100%;
   grid-area: main;
-  border: 1px solid blue;
   display: grid;
   grid-template-columns: 72% 28%;
-  background-color: #e2e8f0;
 }
 
 #your-projects {
-  border: 1px solid red;
   padding-top: 15px;
   padding-bottom: 30px;
  /*  maybe we can find a better solution for this? */
@@ -137,9 +138,7 @@ main {
 }
 
 .header-p{
-  margin-left: 20px;
-  /* font-size: 20px; */
-  font-size: 18px;
+  margin-left: 30px;
 }
 
 .card-container {
@@ -156,10 +155,10 @@ main {
 .card-1 {
   width: calc(50% - 10px);
   height: 20%;
-  margin: 20px;
+  margin: 15px 0 0 30px;
   padding: 20px;
   border-radius: 10px;
-  border-left: 4px solid orange;
+  border-left: 8px solid rgb(240, 180, 41);
   box-shadow: 2px 2px 5px silver;
   text-align: left;
   background-color: whitesmoke;
@@ -172,8 +171,7 @@ main {
 }
 
 .card-title{
-  /* font-size: 27px; */
-  font-size: 16px;
+  font-size: 1.4rem;
 }
 
 .card-content{
@@ -189,17 +187,16 @@ main {
 
 .icon-container i {
   margin-right: 20px;
-  font-size: 12px;
+  font-size: 1.3rem;
+  color: #374151;
 }
 
 img.user-svg {
-  height: 28px;
-  width: 28px;
+  width: 50px;
 }
 
 img.profile-svg {
-  height: 48px;
-  width: 48px;
+  width: 80px;
   grid-area: profile-svg;
   align-self: center;
 }
@@ -215,9 +212,10 @@ img.profile-svg {
   width: 100%;
   background-color: #e2e8f0;
   border: none;
-  height: 50%;
+  height: 60%;
   border-radius: 10px;
   margin-left: 10px;
+  font-size: 1.3rem;
 }
 
 .profile-icons {
@@ -236,7 +234,7 @@ img.profile-svg {
   display: inline;
   margin-left: 20px;
   margin-right: 40px;
-  font-size: 16px;
+  font-size: 1.5rem;
   font-family: 'Roboto-bold', sans-serif;
 }
 
@@ -250,7 +248,8 @@ img.profile-svg {
 }
 
 header .material-icons {
-  font-size: 20px;
+  font-size: 1.5rem;
+  color: #374151;
 }
 
 .actions {
@@ -258,17 +257,17 @@ header .material-icons {
   grid-area: actions;
   align-items: center;
   justify-content: space-evenly;
-  padding: 30px;
+  padding-right: 30px;
 }
 
 .actions button {
   background-color: #1992D4;
   border: none;
   color: #fff;
-  border-radius: 15px;
-  font-size: 14px;
-  padding: 5px 15px;
-  margin-left: 15px;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  padding: 10px 25px;
+  margin-left: 25px;
   width: 30%;
 }
 
@@ -290,6 +289,10 @@ header .material-icons {
 .trending>a {
   display: flex;
   align-items: center;
+}
+
+.trending>a:hover{
+  transform: translateY(2px);
 }
 
 .trending>a>div {
@@ -322,14 +325,12 @@ header .material-icons {
 }
 
 .card>div>h4 {
-  /* font-size: 16px; */
-  font-size: 14px;
+  font-size: 1.1rem;
 }
 
 .card>div>h4~p {
   color: grey;
-  /* font-size: 12px; */
-  font-size: 10px;
+  font-size: 1rem;
   text-align: justify;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -341,11 +342,20 @@ header .material-icons {
 
 .card>a>div>p {
   color: grey;
-  font-size: 12px;
+  font-size: 1rem;
 }
 
 .card>a>div>p:first-child {
   color: black;
-  font-size: 16px;
+  font-size: 1.1rem;
   font-weight: 900;
+}
+
+button:hover {
+  background-color: #0ea5e9;
+  cursor: pointer;
+}
+
+button:active {
+  transform: translateY(2px);
 }
